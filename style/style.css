@@ -1,0 +1,388 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ========================================================================================================= */
+.wraper {
+	margin-left: 215px;
+	margin-right: 215px;
+	max-width: 100%;
+	position: relative;
+}
+/* ========================================================================================================= */
+.header-all{
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+}
+.header-all > div{
+	display: flex;
+}
+
+.WebStudio {
+	font-weight: bold;
+	margin-right: 33px;
+	cursor: pointer;
+	font-size: 26px;
+	font-family: 'Raleway';
+}
+.Studio-header {
+	color: black!important;
+}
+
+.web {
+	color: #2196F3;
+}
+
+.studio {
+	color: white;
+}
+
+
+.header-menu-items {
+	font-size: 14px;
+	cursor: pointer;
+	padding-top: 6px;
+	
+}
+.header-menu-studia:hover,
+.header-menu-portfolio:hover,
+.header-menu-contacts:hover {
+    color: #2196F3;
+}
+
+.header-menu-studia {
+}
+.header-menu-portfolio {
+}
+.header-menu-contacts {
+}
+.header-contacts {
+	padding-top: 6px;
+	right: 0;
+	position: absolute;
+}
+.header-contacts p {
+	margin-left: 33px;
+}
+.header-contacts a {
+	color: #757575; /* Установите нужный цвет для ссылок */
+	text-decoration: none; /* Убирает подчеркивание, если нужно */
+}
+.header-contacts a:hover{
+	color: #2196F3;
+
+}
+
+.header-menu-items > div:not(:last-child) {
+	margin-right: 33px;
+}
+.header-menu-items a{
+	margin-right: 33px;
+	color: black;
+}
+
+
+/* ========================================================================================================= */
+.block-one {
+	text-align: center;
+	justify-content: center;
+	padding-top: 213px;
+	padding-bottom: 58px;
+	padding-left: 46px;
+	padding-right: 46px;
+	line-height: 60px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 44px;
+	font-weight: bold;
+	background-image: url(../img/bgi.png);
+	max-height: 600px;
+	margin-left: -215px;
+    margin-right: -215px;
+}
+.order-service{
+	border-radius: 4px;
+	width: 216px;
+	height: 50px;
+	background-color: #2196F3;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 200px;
+}
+/* ========================================================================================================= */
+.columns{
+	justify-content: space-between;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 95px;
+	display: flex;
+}
+.columns p{
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 20px;
+	padding-bottom: 7px;
+	color: #757575;
+
+}
+h2{
+	font-weight: bold;
+	 font-size: 36px;
+}
+h3{
+	font-weight: 600;
+	 font-size: 14px;
+}
+h4{
+	font-weight: 500;
+	 font-size: 16px;
+}
+/* ========================================================================================================= */
+.services{
+	margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	 max-width: 1170px;
+}
+.services h2{
+	margin-top: 101px;
+	margin-bottom: 59px;
+	display: flex;
+    justify-content: center;
+}
+.service-gallery {
+	display: flex;
+	margin-left: 0px;
+}
+.gallery-item{
+	max-width: 370px;
+	max-height: 294px;
+	height: auto;
+	margin-bottom: 94px;
+}
+.gallery-item:not(:last-child) {
+	margin-right: 30px;
+}
+/* ========================================================================================================= */
+
+.team-section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	background-color: #F5F4FB;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-left: -215px;
+   margin-right: -215px;
+	
+}
+
+.team-section h2 {
+	font-size: 36px;
+	color: #333;
+	margin-bottom: 59px;
+}
+
+.team-section p {
+	color: #757575;
+	font-weight: 400;
+	font-size: 16px;
+
+}
+.team-members {
+	margin-left: 215px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	 max-width: 1170px;
+	
+
+}
+
+.team-member {
+	display: inline-block;
+	max-width: 200px;
+	max-height: 368px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	margin-right: 30px;
+}
+.team-member:hover {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+.team-member img {
+	height: auto;
+	width: 100%;
+}
+.team-member img:hover {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+.team-member h3 {
+	font-size: 22px;
+	color: #333;
+	margin-top: 30px;
+}
+
+.team-member p {
+	margin-top: 14px;
+	margin-bottom: 34px;
+	font-size: 16px;
+	color: #757575;
+}
+/* ========================================================================================================= */
+.footer {
+	margin-left: -215px;
+    margin-right: -215px;
+	 padding-left: 215px;
+	background-color:  #2F303A;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #FFFFFF;
+}
+.footer a{
+color: #ACACB0;
+	text-decoration: none;}
+
+.WebStudio-footer{
+	margin-bottom: 34px;
+}
+.footer-address,
+.footer-email,
+.footer-phone {
+    margin-bottom: 9px;
+}
+/* ========================================================================================================= */
+.header-menu-tab {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.header-menu-tab.active {
+	background-color: #2196F3;
+	color: white;
+}
+
+.tab-content {
+}
+
+.tab-pane {
+	display: none; /* Скрываем все панели по умолчанию */
+}
+/* ========================================================================================================= */
+
+ 
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr)); /* Три колонки фиксированной ширины 370px */
+	grid-template-rows: repeat(3, auto); /* Три ряда фиксированной высоты 404px */
+	gap: 30px; /* Отступы между элементами */
+	justify-content: center; /* Центрирование контейнера, если он меньше ширины родителя */
+}
+
+.grid-item {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	color: black;
+	border: 1px solid #EEEEEE;
+	padding-bottom: 30px;
+	transition: color 300ms linear, background-color 300ms linear, border-color 300ms linear;
+}
+.grid-item:hover {
+	color: #007BFF;
+    background-color: #f0f8ff;
+    border-color: #007BFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Изменяет цвет границы при наведении */
+}
+
+.grid-item img {
+	max-width: 100%; /* Сделать адаптивным */
+	height: auto; /* Автоматическая высота */
+}
+
+.grid-item h3 {
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 30px;
+	padding-bottom: 16px;
+	padding-left: 15px;
+
+}
+
+.grid-item p {
+	color: #757575;
+	padding-left: 15px;
+}
+
+/* ========================================================================================================= */
+
+.button-container{
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
+}
+
+
+.category-button{
+	padding: 12px 44px;
+	background-color: #F5F4FB;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.category-button:hover{
+	background-color: #2196F3;
+	color: white;
+}
