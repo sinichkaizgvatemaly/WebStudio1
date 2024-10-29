@@ -19,6 +19,8 @@ li {
 
 img {
     vertical-align: top;
+    display: block;
+    /* Убирает отступы, создаваемые как inline элемент */
 }
 
 h1,
@@ -33,7 +35,6 @@ h6 {
 
 html,
 body {
-
     height: 100%;
     margin: 0;
     display: flex;
@@ -44,345 +45,369 @@ body {
 
 /* ========================================================================================================= */
 .wraper {
-	margin-left: 215px;
-	margin-right: 215px;
-	max-width: 100%;
-	position: relative;
+
+		margin: 0 215px!important;
+		padding: 0 -215px!important;
+		max-width: 1200px;
+    max-width: 100%;
+    position: relative;
 }
+
 /* ========================================================================================================= */
-.header-all{
-	display: flex;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	font-weight: 500;
+
+.header-all {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
-.header-all > div{
-	display: flex;
+
+.header-all>div {
+    display: flex;
+}
+
+.custom-line {
+    border: none;
+    height: 2px;
+    background-color: #ECECEC;
+    margin: 0 -500px;
 }
 
 .WebStudio {
-	font-weight: bold;
-	margin-right: 33px;
-	cursor: pointer;
-	font-size: 26px;
-	font-family: 'Raleway';
+    font-weight: bold;
+    margin-right: 93px;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: 'Raleway';
 }
+
 .Studio-header {
-	color: black!important;
+    color: black !important;
 }
 
 .web {
-	color: #2196F3;
+    color: #2196F3;
 }
 
 .studio {
-	color: white;
+    color: white;
 }
 
 
 .header-menu-items {
-	font-size: 14px;
-	cursor: pointer;
-	padding-top: 6px;
-	
+    font-size: 14px;
+    cursor: pointer;
+    padding-top: 6px;
+
 }
+
 .header-menu-studia:hover,
 .header-menu-portfolio:hover,
 .header-menu-contacts:hover {
     color: #2196F3;
 }
 
-.header-menu-studia {
-}
-.header-menu-portfolio {
-}
-.header-menu-contacts {
-}
+.header-menu-studia {}
+
+.header-menu-portfolio {}
+
+.header-menu-contacts {}
+
 .header-contacts {
-	padding-top: 6px;
-	right: 0;
-	position: absolute;
+    padding-top: 6px;
+    right: 0;
+    position: absolute;
 }
+
 .header-contacts p {
-	margin-left: 33px;
+    margin-left: 33px;
 }
+
 .header-contacts a {
-	color: #757575; /* Установите нужный цвет для ссылок */
-	text-decoration: none; /* Убирает подчеркивание, если нужно */
+    color: #757575;
+    text-decoration: none;
 }
-.header-contacts a:hover{
-	color: #2196F3;
+
+.header-contacts a:hover {
+    color: #2196F3;
 
 }
 
-.header-menu-items > div:not(:last-child) {
-	margin-right: 33px;
+.header-menu-items>div:not(:last-child) {
+    margin-right: 33px;
 }
-.header-menu-items a{
-	margin-right: 33px;
-	color: black;
+
+.header-menu-items a {
+    margin-right: 33px;
+    color: black;
 }
 
 
 /* ========================================================================================================= */
+
+
+
+
 .block-one {
-	text-align: center;
-	justify-content: center;
-	padding-top: 213px;
-	padding-bottom: 58px;
-	padding-left: 46px;
-	padding-right: 46px;
-	line-height: 60px;
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	font-size: 44px;
-	font-weight: bold;
-	background-image: url(../img/bgi.png);
-	max-height: 600px;
-	margin-left: -215px;
-    margin-right: -215px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 213px;
+    padding-bottom: 58px;
+    padding-left: 46px;
+    padding-right: 46px;
+    line-height: 60px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    background-image: url(../img/bgi.png);
+    max-height: 600px;
+	 margin-left: -215px;
+	 margin-right: -215px;
 }
-.order-service{
-	border-radius: 4px;
-	width: 216px;
-	height: 50px;
-	background-color: #2196F3;
-	font-size: 16px;
-	font-weight: bold;
-	color: white;
-	margin-bottom: 200px;
-}
+
 /* ========================================================================================================= */
-.columns{
-	justify-content: space-between;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	font-size: 14px;
-	margin-top: 95px;
+.columns {
 	display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 95px;
+	 padding: 0 auto;
 }
-.columns p{
-	font-weight: 400;
-	line-height: 24px;
-	padding-top: 20px;
-	padding-bottom: 7px;
-	color: #757575;
+
+.columns p {
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    color: #757575;
 
 }
-h2{
-	font-weight: bold;
-	 font-size: 36px;
+
+.column-img-wrapper {
+    background-color: #F5F4FB;
+    border-radius: 4px;
+
 }
-h3{
-	font-weight: 600;
-	 font-size: 14px;
+
+.column-img {
+
 }
-h4{
-	font-weight: 500;
-	 font-size: 16px;
+
+
+h2 {
+    font-weight: bold;
+    font-size: 36px;
 }
+
+h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
 /* ========================================================================================================= */
-.services{
-	margin-left: 0px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-	 max-width: 1170px;
-}
-.services h2{
-	margin-top: 101px;
-	margin-bottom: 59px;
+.services {
 	display: flex;
-    justify-content: center;
+	flex-direction: column; 
+	padding: 0 auto;
+	align-items: center;
+}
+
+.services h2 {
+    margin-top: 101px;
+    margin-bottom: 59px;
+}
+
+.container-services{
+width: 100%;
+
 }
 .service-gallery {
 	display: flex;
-	margin-left: 0px;
+	width: 100%;
 }
-.gallery-item{
-	max-width: 370px;
-	max-height: 294px;
-	height: auto;
-	margin-bottom: 94px;
+
+.gallery-item {
+    margin: 0 auto;
+    max-width: 330px;
+    max-height: auto;
+    margin-bottom: 94px;
 }
-.gallery-item:not(:last-child) {
-	margin-right: 30px;
-}
+
 /* ========================================================================================================= */
 
-.team-section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	background-color: #F5F4FB;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	margin-left: -215px;
-   margin-right: -215px;
-	
-}
 
-.team-section h2 {
-	font-size: 36px;
-	color: #333;
-	margin-bottom: 59px;
-}
-
-.team-section p {
-	color: #757575;
+.team-members {
+	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 16px;
-
+	margin-top: 95px;
+	margin-bottom: 94px;
+	text-align: center; /* Центрируем текст заголовка */
 }
-.team-members {
-	margin-left: 215px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-	 max-width: 1170px;
-	
-
+.team-members-container{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 auto;
 }
-
 .team-member {
-	display: inline-block;
-	max-width: 200px;
-	max-height: 368px;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	margin-right: 30px;
+    max-width: 200px;
+    max-height: 368px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .team-member:hover {
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-	cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .team-member img {
-	height: auto;
-	width: 100%;
-}
-.team-member img:hover {
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-	cursor: pointer;
+    height: auto;
+    width: 100%;
 }
 
 .team-member h3 {
-	font-size: 22px;
-	color: #333;
-	margin-top: 30px;
+    font-size: 22px;
+    color: #333;
+    margin-top: 30px;
 }
 
 .team-member p {
-	margin-top: 14px;
-	margin-bottom: 34px;
-	font-size: 16px;
-	color: #757575;
+    margin-top: 14px;
+    margin-bottom: 34px;
+	 font-family: 'Roboto';
+	 font-weight: 400;
+	 font-size: 16px;
+    color: #757575;
 }
+
 /* ========================================================================================================= */
 .footer {
-	margin-left: -215px;
+    margin-left: -215px;
     margin-right: -215px;
-	 padding-left: 215px;
-	background-color:  #2F303A;
-
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: #FFFFFF;
+    padding-left: 215px;
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #FFFFFF;
 }
-.footer a{
-color: #ACACB0;
-	text-decoration: none;}
 
-.WebStudio-footer{
-	margin-bottom: 34px;
+.footer a {
+    color: #ACACB0;
+    text-decoration: none;
 }
+
+.WebStudio-footer {
+    margin-bottom: 34px;
+}
+
 .footer-address,
 .footer-email,
 .footer-phone {
     margin-bottom: 9px;
 }
+
 /* ========================================================================================================= */
 .header-menu-tab {
-	cursor: pointer;
-	display: inline-block;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .header-menu-tab.active {
-	background-color: #2196F3;
-	color: white;
+    background-color: #2196F3;
+    color: white;
 }
 
-.tab-content {
-}
+.tab-content {}
 
 .tab-pane {
-	display: none; /* Скрываем все панели по умолчанию */
+    display: none;
 }
+
 /* ========================================================================================================= */
 
- 
+
 .grid-container {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr)); /* Три колонки фиксированной ширины 370px */
-	grid-template-rows: repeat(3, auto); /* Три ряда фиксированной высоты 404px */
-	gap: 30px; /* Отступы между элементами */
-	justify-content: center; /* Центрирование контейнера, если он меньше ширины родителя */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+    justify-content: center;
 }
 
 .grid-item {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	color: black;
-	border: 1px solid #EEEEEE;
-	padding-bottom: 30px;
-	transition: color 300ms linear, background-color 300ms linear, border-color 300ms linear;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border: 1px solid #EEEEEE;
+    padding-bottom: 30px;
+    transition: color 300ms linear, background-color 300ms linear, border-color 300ms linear;
 }
+
 .grid-item:hover {
-	color: #007BFF;
+    color: #007BFF;
     background-color: #f0f8ff;
     border-color: #007BFF;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Изменяет цвет границы при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item img {
-	max-width: 100%; /* Сделать адаптивным */
-	height: auto; /* Автоматическая высота */
+    max-width: 100%;
+    height: auto;
 }
 
-.grid-item h3 {
-	font-weight: bold;
-	font-size: 18px;
-	padding-top: 30px;
-	padding-bottom: 16px;
-	padding-left: 15px;
-
+.grid-item h3,
+.grid-item a {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    color: inherit;
+    text-decoration: none;
 }
+
 
 .grid-item p {
-	color: #757575;
-	padding-left: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    padding-left: 15px;
 }
 
 /* ========================================================================================================= */
 
-.button-container{
-	display: flex;
-	justify-content: center;
-	gap: 8px;
-	margin-bottom: 50px;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 95px;
+    margin-bottom: 50px;
 }
 
 
-.category-button{
-	padding: 12px 44px;
-	background-color: #F5F4FB;
-	border-radius: 4px;
-	cursor: pointer;
+.category-button {
+    font-weight: 500;
+    padding: 12px 44px;
+    background-color: #F5F4FB;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.category-button:hover{
-	background-color: #2196F3;
-	color: white;
+
+.category-button:hover {
+    background-color: #2196F3;
+    color: white;
 }
